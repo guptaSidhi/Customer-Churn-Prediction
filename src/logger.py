@@ -3,8 +3,10 @@ import os
 import sys 
 from datetime import datetime
 
+CURR_DIR = r"C:\Users\Sidhi Gupta\Desktop\PROJECTS\Customer Churn Prediction"
+
 LOG_FILE = f"{datetime.now().strftime("%m_%d_%Y_%H_%M_%S")}.log"
-logs_path = os.path.join(os.getcwd(),"logs_path",LOG_FILE)
+logs_path = os.path.join(CURR_DIR,"logs_path",LOG_FILE)
 os.makedirs(logs_path,exist_ok=True)
 LOG_FILE_PATH = os.path.join(logs_path,LOG_FILE)
 
